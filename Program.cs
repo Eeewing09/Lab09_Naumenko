@@ -34,10 +34,43 @@
 
 // Console.WriteLine("Работа с журналом завершена");
 // задача А
-for (int c = 1; c <= 100; c += 2)
+// for (int c = 1; c <= 100; c += 2)
+// {
+
+//     Console.WriteLine(c);
+
+// }
+// // задача Б
+// for (int z = 100; z >= 0; z -= 10)
+// {
+//     Console.WriteLine(z);
+// }
+// Console.Write("Введите свою фамилию: ");
+// string surname = Console.ReadLine()!.Trim();
+// if (string.IsNullOrEmpty(surname)) {
+// Console.WriteLine("Фамилия не введена. Завершение работы.");
+// return;
+// }
+// Random rnd = new(surname.GetHashCode() + DateTime.Now.DayOfYear);
+// var assigned = Enumerable.Range(1, 10)
+// .OrderBy(_ => rnd.Next())
+// .Take(2)
+// .OrderBy(x => x)
+// .ToList();
+// Console.WriteLine($"Задачи: №{assigned[0]} и №{assigned[1]}");
+// задача 8
+// for (int i = 100; i >= 2; i -= 2)
+// {
+//     Console.WriteLine(i);
+// }
+//зд 9
+int sum = 0;
+for (int u = 1; u <= 50; u += 1)
 {
-
-    Console.WriteLine(c);
-
+    if (u % 5 == 0)
+    {
+        continue;
+    }
+    else { sum += u; }
 }
-// задача Б
+Console.WriteLine(sum);
