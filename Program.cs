@@ -64,13 +64,46 @@
 //     Console.WriteLine(i);
 // }
 //зд 9
-int sum = 0;
-for (int u = 1; u <= 50; u += 1)
+// int sum = 0;
+// for (int u = 1; u <= 50; u += 1)
+// {
+//     if (u % 5 == 0)
+//     {
+//         continue;
+//     }
+//     else { sum += u; }
+// }
+// Console.WriteLine(sum);
+
+int n = int.Parse(Console.ReadLine());
+
+int training = 0;
+bool enough = false;
+
+
+for (int week = 1; week <= n && !enough; week++)
 {
-    if (u % 5 == 0)
+    for (int day = 1; day <= 7; day++)
     {
-        continue;
+
+        if (day == 7)
+        {
+            continue;
+        }
+
+
+        training = training + 1;
+
+
+        if (training == 20)
+        {
+            enough = true;
+
+
+            Console.WriteLine(week);
+            Console.WriteLine(day);
+
+            break;
+        }
     }
-    else { sum += u; }
 }
-Console.WriteLine(sum);
